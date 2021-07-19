@@ -5,11 +5,11 @@
 
 # Must Do Easy Problems
 
-[13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/)
-[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
-[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
-[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
-[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
+[13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/)  
+[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)\
+[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)<br>
+[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)<br/>
+[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)<br />
 [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
 [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
 [155. Min Stack](https://leetcode.com/problems/min-stack/)
