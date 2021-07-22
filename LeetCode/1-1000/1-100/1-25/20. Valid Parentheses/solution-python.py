@@ -8,11 +8,11 @@ class Solution:
         for i in s:
             if i in "({[":
                 temp.append(i)
-            elif pairs[i] not in temp:
+            elif not temp or pairs[i] != temp[-1]:
                 validity = False
                 return validity
             else:
-                temp.remove(pairs[i])
+                temp.pop()
         if temp:
             validity = False
         return validity
