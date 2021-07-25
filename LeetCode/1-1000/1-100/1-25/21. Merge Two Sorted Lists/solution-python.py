@@ -8,18 +8,23 @@ class ListNode:
 class Solution:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         # # Super naive approach
-        lsorted = ListNode(0)
-        while l1 is not None and l2 is not None:
+        if not l1:
+            return l2
+        if not l2:
+            return l1
+        lsorted = temp = ListNode()
+        while l1 and l2:
             if l1.val < l2.val:
-                lsorted.next = l1.val
+                lsorted = ListNode(l1.val)
                 l1 = l1.next
             else:
-                lsorted.next = l2.val
+                lsorted = ListNode(l2.val)
                 l2 = l2.next
-        while l1 is not None:
-            lsorted.next = l1.val
+            lsorted.next = lsorted
+        while l1:
+            lsorted = ListNode(l1.val)
             l1 = l1.next
-        while l2 is not None:
-            lsorted.next = l2.val
+        while l2:
+            lsorted = ListNode(l2.val)
             l2 = l2.next
         return lsorted
