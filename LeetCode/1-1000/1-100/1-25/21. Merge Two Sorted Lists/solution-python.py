@@ -15,16 +15,14 @@ class Solution:
         lsorted = temp = ListNode()
         while l1 and l2:
             if l1.val < l2.val:
-                lsorted = ListNode(l1.val)
+                temp.next = ListNode(l1.val)
                 l1 = l1.next
             else:
-                lsorted = ListNode(l2.val)
+                temp = ListNode(l2.val)
                 l2 = l2.next
-            lsorted.next = lsorted
-        while l1:
-            lsorted = ListNode(l1.val)
-            l1 = l1.next
+            temp = temp.next
+        if l1:
+            temp.next = l1
         while l2:
-            lsorted = ListNode(l2.val)
-            l2 = l2.next
-        return lsorted
+            temp.next = l2
+        return temp.next
