@@ -13,7 +13,7 @@ class Solution:
         # return sum
         # super naive
         sum = nums[0]
-        if len(nums) = 1:
+        if len(nums) == 1:
             return sum
         for i in range(len(nums)):
             temp = 0
