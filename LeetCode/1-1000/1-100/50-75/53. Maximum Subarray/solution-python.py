@@ -12,9 +12,9 @@ class Solution:
         #         sum += j
         # return sum
         # super naive
+        sum = nums[0]
         if len(nums) = 1:
-            return nums[0]
-        sum = 0
+            return sum
         for i in range(len(nums)):
             temp = 0
             for j in range(i, len(nums)):
