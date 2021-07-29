@@ -14,12 +14,10 @@ class Solution:
         # Instead, using two pointers moving at different rates,
         # they will meet at some common multiple of the cycle length,
         # if there is one.
-        while head:
-            try:
-                slow = head.next
-                fast = head.next.next
-            except:
-                return False
+        slow = fast = head
+        while head.next:
+            slow = slow.next
+            fast = fast.next.next
             if slow == fast:
                 return True
             head = head.next
