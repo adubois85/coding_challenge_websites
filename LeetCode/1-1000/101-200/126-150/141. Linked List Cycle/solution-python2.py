@@ -15,10 +15,11 @@ class Solution:
         # they will meet at some common multiple of the cycle length,
         # if there is one.
         slow = fast = head
-        while head.next:
-            slow = slow.next
-            fast = fast.next.next
-            if slow == fast:
-                return True
-            head = head.next
+        if head:
+            while fast.next and fast.next.next:
+                slow = slow.next
+                fast = fast.next.next
+                if slow == fast:
+                    return True
+                head = head.next
         return False
