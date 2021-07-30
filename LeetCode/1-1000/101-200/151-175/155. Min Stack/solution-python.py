@@ -14,7 +14,8 @@ class MinStack:
 
     def push(self, val: int) -> None:
         self.previous_val = (self.top_val, self.min_val, self.previous_val)
-        if not self.min_val or val < self.min_val:
+        # In some cases at least, Python treats None and 0 as equivalent
+        if self.min_val is None or val < self.min_val:
             self.min_val = val
         self.top_val = val
 
