@@ -11,25 +11,23 @@ class MinStack:
         self.previous_val = None
         # Current smallest value on the stack
         self.min_val = None
-        # Need to consider the number of times an item has been added to the stack
-        self.val_counts = {}
 
     def push(self, val: int) -> None:
-        self.val_counts.setdefault(val, 0)
-        self.val_counts[val] += 1
-        if val < self.min_val:
+        if not self.min_val or val < self.min_val:
             self.min_val = val
+        self.previous_val = (self.top_val, self.min_val, self.previous_val)
         self.top_val = val
-        self.previous_val = (self.top_val, self.previous_val)
 
     def pop(self) -> None:
-        pass
+        self.top_val = self.previous_val[0]
+        self.min_val = self.previous_val[1]
+        self.previous_val = self.previous_val[2]
 
     def top(self) -> int:
-        pass
+        return self.top_val
 
     def getMin(self) -> int:
-        pass
+        return self.min_val
 
 
 # Your MinStack object will be instantiated and called as such:
