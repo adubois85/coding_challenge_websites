@@ -13,9 +13,9 @@ class MinStack:
         self.min_val = None
 
     def push(self, val: int) -> None:
+        self.previous_val = (self.top_val, self.min_val, self.previous_val)
         if not self.min_val or val < self.min_val:
             self.min_val = val
-        self.previous_val = (self.top_val, self.min_val, self.previous_val)
         self.top_val = val
 
     def pop(self) -> None:
