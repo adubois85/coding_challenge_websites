@@ -20,17 +20,13 @@ class Solution:
         # list.
         point_a = headA
         point_b = headB
-        # this is super hacky, but it works
-        # probably a better way to do it
-        loop_a = True
-        loop_b = True
         while point_a != point_b:
-            point_a = point_a.next
-            point_b = point_b.next
-            if not point_a and loop_a:
+            if not point_a:
                 point_a = headB
-                loop_a = False
-            if not point_b and loop_b:
+            else:
+                point_a = point_a.next
+            if not point_b:
                 point_b = headA
-                loop_b = False
+            else:
+                point_b = point_b.next
         return point_a
