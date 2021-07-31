@@ -7,4 +7,16 @@ class ListNode:
 
 class Solution:
     def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> ListNode:
-        pass
+        if not headA or not headB:
+            return None
+        # Super slow and naive double-nested loop
+        # But there is definitely a better way to go about this
+        temp = headB
+        while headA:
+            while headB:
+                if headA == headB:
+                    return headA
+                headB = headB.next
+            headA = headA.next
+            headB = temp
+        return None
