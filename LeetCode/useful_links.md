@@ -18,7 +18,6 @@
 [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)<br>
 [169. Majority Element](https://leetcode.com/problems/majority-element/)<br>
 [172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)<br>
-[189. Rotate Array](https://leetcode.com/problems/rotate-array/)<br>
 [198. House Robber](https://leetcode.com/problems/house-robber/)<br>
 [202. Happy Number](https://leetcode.com/problems/happy-number/)<br>
 [204. Count Primes](https://leetcode.com/problems/count-primes/)<br>
@@ -73,6 +72,7 @@
 [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)<br>
 [166. Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/)<br>
 [179. Largest Number](https://leetcode.com/problems/largest-number/)<br>
+[189. Rotate Array](https://leetcode.com/problems/rotate-array/)<br>
 [200. Number of Islands](https://leetcode.com/problems/number-of-islands/)<br>
 [207. Course Schedule](https://leetcode.com/problems/course-schedule/)<br>
 [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)<br>
