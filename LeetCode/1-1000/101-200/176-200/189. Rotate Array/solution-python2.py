@@ -11,18 +11,26 @@ class Solution:
         # with the rotated value, then write that temp variable to
         # the place of the original rotation value, and repeat.
         # storing this as a variable isn't necessary, but it's easier to read
-        ln = len(nums)
-        if k >= ln:
-            k = k % ln
-        temp = None
-        ln = ln - k
-        for i in range(k):
-            temp = nums[i]
-            nums[i] = nums[ln + i]
-            nums[ln + i] = temp
+        offset = len(nums)
+        if k >= offset:
+            k = k % offset
+        temp = start = 0
+        offset -= k
+        while offset > 0:
+            for i in range(k):
+                temp = nums[start + i]
+                nums[start + i] = nums[start + offset + i]
+                nums[start + offset + i] = temp
+            start += k
+            offset -= k
 
 # [6, 7, 8, 9, 1, 2, 3, 4, 5]
 # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# [1, 2, 3, 4, 5, 6, 9, 8, 7]
+# [1, 2, 3, 4, 5, 8, 9, 6, 7]
+# [1, 2, 3, 4, 9, 8, 5, 6, 7]
+# [1, 2, 3, 8, 9, 4, 5, 6, 7]
 
 # [6, 2, 3, 4, 5, 1, 7, 8, 9]
 # [6, 7, 3, 4, 5, 1, 2, 8, 9]
@@ -67,3 +75,13 @@ class Solution:
 # [7, 8, 9, 1, 5, 6, 4, 2, 3]
 # [7, 8, 9, 1, 2, 6, 4, 5, 3]
 # [7, 8, 9, 1, 2, 3, 4, 5, 6]
+
+# [5, 6, 7, 8, 9, 1, 2, 3, 4]
+# [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# [5, 2, 3, 4, 1, 6, 7, 8, 9]
+# [5, 6, 3, 4, 1, 2, 7, 8, 9]
+# [5, 6, 7, 4, 1, 2, 3, 4, 9]
+# [5, 6, 7, 8, 1, 2, 3, 4, 9]
+# [5, 6, 7, 8, 9, 2, 3, 4, 1]
+
