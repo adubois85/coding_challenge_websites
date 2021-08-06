@@ -11,19 +11,22 @@ class Solution:
         # with the rotated value, then write that temp variable to
         # the place of the original rotation value, and repeat.
         # storing this as a variable isn't necessary, but it's easier to read
-        offset = len(nums)
-        if k >= offset:
-            k = k % offset
-        temp = start = 0
-        offset -= k
-        while offset > 0:
-            for i in range(k):
-                temp = nums[start + i]
-                nums[start + i] = nums[start + offset + i]
-                nums[start + offset + i] = temp
-            start += k
-            offset -= k
-
+        start = end = len(nums)
+        if k >= start:
+            k = k % start
+        if k == 0:
+            return
+        start -= k
+        for i in range(end):
+            temp = nums[i]
+            nums[i] = nums[start]
+            nums[start] = temp
+            start += 1
+            if start == end:
+                if i + k > end:
+                    start = end - 1
+                else:
+                    start = end - k
 # [6, 7, 8, 9, 1, 2, 3, 4, 5]
 # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 

@@ -13,19 +13,13 @@ class Solution:
         # Rotating the list by the number of items in it is the
         # same as doing nothing.  Rotating by more that that is
         # then the same as rotating it by the modulus of those
-        start = end = len(nums)
-        if k >= start:
-            k = k % start
-        if k == 0:
-            return
-        start -= k
-        for i in range(end):
-            temp = nums[i]
-            nums[i] = nums[start]
-            nums[start] = temp
-            start += 1
-            if start == end:
-                if i + k > end:
-                    start = end - 1
-                else:
-                    start = end - k
+        if k >= len(nums):
+            k = k % len(nums)
+        rot_end = len(nums) - k
+        while k > 0:
+            temp.append(nums[-k])
+            k -= 1
+        for i in range(rot_end):
+            temp.append(nums[i])
+        for i in range(len(nums)):
+            nums[i] = temp[i]
