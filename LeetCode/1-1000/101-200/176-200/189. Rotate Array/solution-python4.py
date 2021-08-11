@@ -10,7 +10,7 @@ class Solution:
         # An array juggling algorithm
         # I never want to see another array in my life
         # I also attached the notebook I was using to test things
-        # over the past few days for a slight glimpse into the maddness
+        # over the past few days for a slight glimpse into the madness
         end = len(nums)
         if k >= end:
             k = k % end
