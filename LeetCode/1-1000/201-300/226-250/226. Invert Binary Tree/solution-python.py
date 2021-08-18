@@ -10,5 +10,14 @@ class TreeNode:
 
 
 class Solution:
+    # recursive solution
+    # Depth-first search going right, then left
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        pass
+        if root is None:
+            return root
+        if root.right:
+            self.invertTree(root.right)
+        if root.left:
+            self.invertTree(root.left)
+        root.left, root.right = root.right, root.left
+        return root
