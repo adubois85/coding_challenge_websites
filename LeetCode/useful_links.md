@@ -23,7 +23,6 @@
 [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)<br>
 [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)<br>
 [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)<br>
-[371. Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)<br>
 [448. Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)<br>
 [557. Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/)<br>
 [572. Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)<br>
@@ -90,6 +89,7 @@
 [338. Counting Bits](https://leetcode.com/problems/counting-bits/)<br>
 [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)<br>
 [355. Design Twitter](https://leetcode.com/problems/design-twitter/)<br>
+[371. Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)<br>
 [377. Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)<br>
 [417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)<br>
 [421. Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/)<br>
