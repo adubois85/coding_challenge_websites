@@ -8,8 +8,8 @@ class Solution:
         # way of fulfilling the requirements, by skipping them entirely.
         i = 0
         while i < (end := len(flowerbed)):
-            prev = (0 if (i - 1) < 0 else flowerbed[i - 1])
-            next = (0 if (i + 1) > end - 1 else flowerbed[i + 1])
+            prev = (0 if i == 0 else flowerbed[i - 1])
+            next = (0 if i == end - 1 else flowerbed[i + 1])
             if next == 1:
                 i += 2
             elif prev + flowerbed[i] + next == 0:
