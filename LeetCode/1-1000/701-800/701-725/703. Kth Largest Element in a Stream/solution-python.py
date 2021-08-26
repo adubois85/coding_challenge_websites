@@ -11,8 +11,9 @@ class KthLargest:
         # input list is shorter than k, it would wrap around and cause issues.
         # E.g. if the input were [1, -5] and k = 3, it k_elements would only be
         # [1] as 2 - 3 = -1, so nums[-1:] would only give the last element.
-        end = (len(nums) - k if len(nums) - k > 0 else 0)
-        self.k_elements = nums[end:]
+        # Realized after doing this that I can simplify it further
+        # end = (len(nums) - k if len(nums) - k > 0 else 0)
+        self.k_elements = nums[-k:]
 
     def add(self, val: int) -> int:
         # If the input list were empty, you'll get out of bounds errors as you
