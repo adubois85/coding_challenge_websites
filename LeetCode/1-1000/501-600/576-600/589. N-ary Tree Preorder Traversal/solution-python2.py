@@ -7,6 +7,7 @@ class Node:
         self.val = val
         self.children = children
 
+
 # Copy / paste from one of the other solutions on LeetCode
 # One of the reasons I had so many problems getting this to work is because of
 # how the input data was set up.  After poking around with print statements, I
