@@ -15,15 +15,14 @@ class Solution:
     def levelOrder(self, root: 'Node') -> List[List[int]]:
         if not root:
             return root
-        order, level = [], []
-        order.append([root.val])
+        order = [[root.val]]
+        level = []
         current = deque(root.children)
         children = deque()
         while current:
             temp = current.popleft()
-            if temp.children:
-                for child in temp.children:
-                    children.append(child)
+            for child in temp.children:
+                children.append(child)
             level.append(temp.val)
             if not current:
                 order.append(level)
