@@ -33,7 +33,6 @@
 [674. Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/)<br>
 [703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)<br>
 [705. Design HashSet](https://leetcode.com/problems/design-hashset/)<br>
-[849. Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/)<br>
 [852. Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)<br>
 [1160. Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)<br>
 
@@ -102,6 +101,7 @@
 [665. Non-decreasing Array](https://leetcode.com/problems/non-decreasing-array/)<br>
 [763. Partition Labels](https://leetcode.com/problems/partition-labels/)<br>
 [767. Reorganize String](https://leetcode.com/problems/reorganize-string/)<br>
+[849. Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/)<br>
 [907. Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums/)<br>
 [1171. Remove Zero Sum Consecutive Nodes from Linked List](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/)<br>
 [1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)<br>
