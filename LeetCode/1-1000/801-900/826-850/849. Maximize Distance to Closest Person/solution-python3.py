@@ -4,7 +4,7 @@ from typing import List
 
 class Solution:
     # copy / paste from one of the "fastest" solutions on LeetCode
-    def maxDistToClosest2(self, seats: List[int]) -> int:
+    def maxDistToClosest(self, seats: List[int]) -> int:
         # This is basically doing the same thing I did, but in a more concise
         # way.  Firstly, find the first index of 1 from both the start and end
         # of the input array.  Then, using the itertools groupby method, gather
