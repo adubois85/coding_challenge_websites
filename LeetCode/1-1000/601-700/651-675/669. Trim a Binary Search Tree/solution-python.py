@@ -10,5 +10,17 @@ class TreeNode:
 
 
 class Solution:
+    # I really don't like trees, espcially combined with recursion.  It's
+    # always so finicky to get them to do what you want.  Especially annoying
+    # when you have something that works in testing, but then LeetCode doesn't
+    # accept it for whatever reason.
     def trimBST(self, root: Optional[TreeNode], low: int, high: int) -> Optional[TreeNode]:
-        pass
+        if root is None:
+            return None
+        if root.val < low:
+            return self.trimBST(root.right, low, high)
+        elif root.val > high:
+            return self.trimBST(root.left, low, high)
+        root.left = self.trimBST(root.left, low, high)
+        root.right = self.trimBST(root.right, low, high)
+        return root
