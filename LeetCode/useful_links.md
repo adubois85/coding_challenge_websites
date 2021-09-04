@@ -29,7 +29,6 @@
 [589. N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/)<br>
 [605. Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)<br>
 [617. Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)<br>
-[669. Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree/)<br>
 [674. Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/)<br>
 [703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)<br>
 [705. Design HashSet](https://leetcode.com/problems/design-hashset/)<br>
@@ -99,6 +98,7 @@
 [529. Minesweeper](https://leetcode.com/problems/minesweeper/)<br>
 [658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/)<br>
 [665. Non-decreasing Array](https://leetcode.com/problems/non-decreasing-array/)<br>
+[669. Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree/)<br>
 [763. Partition Labels](https://leetcode.com/problems/partition-labels/)<br>
 [767. Reorganize String](https://leetcode.com/problems/reorganize-string/)<br>
 [849. Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/)<br>
